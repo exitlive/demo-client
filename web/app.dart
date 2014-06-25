@@ -50,7 +50,7 @@ convertToUppercase() {
         // Notice that the response is an instance of `UppercaseText`
         // that has already been validated and supports code
         // completion.
-        querySelector('#output').innerHtml += 'Response from server: ${response.text}\n';
+        querySelector('#output').innerHtml += 'Response: ${response.text}\n';
       });
 
 }
