@@ -43,7 +43,7 @@ convertToUppercase() {
       // is a proper attribute of an [InputElement].
 
   // Call the remote procedure on the `textService`.
-  services.textService.convertToUppercase(requestMessage)
+  services.textService.convertToUpperCase(requestMessage)
       .then((UppercaseText response) {
         // Write the response to our <pre></pre> element.
 
