@@ -1,0 +1,6 @@
+name: exitlive_demo_client
+description: A sample web application
+dependencies:
+  browser: any
+  exitlive_demo_server:
+    path: ../exitlive_demo_server
