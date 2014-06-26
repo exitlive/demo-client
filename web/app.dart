@@ -21,7 +21,7 @@ void main() {
 
   // Setup the click event for the uppercase button
   querySelector('button#to-uppercase')
-      .onClick.listen((_) => convertToUppercase());
+      .onClick.listen((_) => convertToUpperCase());
 
 }
 
@@ -31,20 +31,20 @@ void main() {
  * Reads the text from the input field, and calls the
  * remote procedure on the server to transform the text.
  */
-convertToUppercase() {
+convertToUpperCase() {
 
   // Get the input element
   InputElement input = querySelector('input');
 
   // And its value.
-  var requestMessage = new TextToUppercaseRequest()
+  var requestMessage = new TextToUpperCaseRequest()
       ..text = input.value;
       // Notice how the Dart editor *knows* that `.value`
       // is a proper attribute of an [InputElement].
 
   // Call the remote procedure on the `textService`.
   services.textService.convertToUpperCase(requestMessage)
-      .then((UppercaseText response) {
+      .then((UpperCaseText response) {
         // Write the response to our <pre></pre> element.
 
         // Notice that the response is an instance of `UppercaseText`
